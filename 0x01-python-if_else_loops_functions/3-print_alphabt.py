@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for alphabet_letters in range(ord('a'), ord('z')+1):
-    if chr(alphabet_letters) not in ('e', 'q'):
-        print("{:c}".format(alphabet_letters), end="")
+for i in range(97, 123):
+    if i == 101 or i == 113:
+        continue
+    print("{:c}".format(i), end='')
